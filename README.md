@@ -1,4 +1,4 @@
-# 🦜🔗 Macaw
+# 🦜🔗 Maccaw
 
 ⚡ Build LLM tools with ease ⚡
 
@@ -8,14 +8,14 @@
 With pip:
 
 ```bash
-pip install macaw
+pip install maccaw
 ```
 
 
 
-## 🤔 What is Macaw?
+## 🤔 What is Maccaw?
 
-**Macaw** is a very light weight library to create and run agents, with any LLM supported openai spec, Claude, Mistral..
+**Maccaw** is a very light weight library to create and run agents, with any LLM supported openai spec, Claude, Mistral..
 
 
 ## 🧱 What can you build with Macaw?
