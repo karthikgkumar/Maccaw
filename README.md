@@ -22,7 +22,7 @@ pip install macaw
 
 ** ♻ Recycle Bin Agent**
 
-- [Documentation]()
+- [Tutorial](https://github.com/karthikgkumar/Macaw/blob/main/examples/recycle.py)
 - End-to-end Example: 
 
 **🧱 PPT Gneration Agent**
