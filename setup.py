@@ -15,7 +15,7 @@ setup(
         # List dependencies here
     ],
     author="Karthik G Kumar",
-    author_email="karthikgkumar.pro@gmail.com",
+    author_email="karthikgkumar2002@gmail.com",
     description="A very light weight library to create and run agents, with any LLM supported openai spec, Claude, Mistral.",
     long_description="A longer description, possibly with usage examples",
     long_description_content_type="text/markdown",
