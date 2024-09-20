@@ -3,7 +3,7 @@ from datetime import datetime
 import json
 from typing import Dict, List, Optional, Callable
 
-from macaw import (
+from maccaw import (
     BaseTool,
     ClaudeLLM,
     OpenaiLLM,
@@ -25,7 +25,7 @@ import requests
 from io import BytesIO
 import os
 
-from macaw import map_type_to_json
+from maccaw import map_type_to_json
 
 
 def get_current_timestamp():
@@ -33,11 +33,11 @@ def get_current_timestamp():
     current_timestamp = datetime.now().strftime("%A, %Y-%m-%d %H:%M:%S")
 
     return current_timestamp
-class MacawAgent:
+class MaccawAgent:
     def __init__(
         self,
         sys_prompt: str,
-        macaw_llm: LLM,
+        maccaw_llm: LLM,
         tools_list: Optional[List[BaseTool]] = [],
         pickup_mes_count: int = 4,
         logging: bool = False,
@@ -60,7 +60,7 @@ class MacawAgent:
         self.sys_prompt: str = sys_prompt
         self.messages: List = []
         self.tools_list: List = tools_list
-        self.ava_llm: LLM = macaw_llm
+        self.ava_llm: LLM = maccaw_llm
         self.streaming: bool = streaming
         self.pickup_mes_count: int = pickup_mes_count
         self.pikcup_mes_count_in_sys_history = pikcup_mes_count_in_sys_history
@@ -117,7 +117,7 @@ class MacawAgent:
                 self.messages = self.trim_list(
                     input_list=self.messages, count=self.pickup_mes_count
                 )
-                return self.macaw_main_executor(
+                return self.maccaw_main_executor(
                     messages=self.messages,
                     tools_list=self.tools_list,
                     ava_llm=self.ava_llm,
@@ -228,7 +228,7 @@ class MacawAgent:
                 input_list[0] = self.generateSysMessageForLLM(content=self.sys_prompt)
             return input_list
 
-    def macaw_main_executor(
+    def maccaw_main_executor(
         self, messages: List[dict], tools_list: List[BaseTool], ava_llm: LLM
     ):
         """
@@ -524,7 +524,7 @@ class MacawAgent:
                                     self.updateSysMessage()
                                 return resp
 
-                return self.macaw_main_executor(
+                return self.maccaw_main_executor(
                     messages=messages, tools_list=tools_list, ava_llm=ava_llm
                 )
 
@@ -634,7 +634,7 @@ class MacawAgent:
                                     )
                                     self.updateSysMessage()
                                 return resp
-                return self.macaw_main_executor(
+                return self.maccaw_main_executor(
                     messages=messages, tools_list=tools_list, ava_llm=ava_llm
                 )
 
@@ -889,7 +889,7 @@ class MacawAgent:
                                 )
                                 self.updateSysMessage()
                             return resp
-            return self.macaw_main_executor(
+            return self.maccaw_main_executor(
                 messages=messages, tools_list=tools_list, ava_llm=ava_llm
             )
 

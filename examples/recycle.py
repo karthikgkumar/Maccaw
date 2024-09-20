@@ -3,8 +3,8 @@ import threading
 import winsound
 from pydantic import BaseModel, Field
 from typing import Optional, Type
-from macaw.macaw import BaseTool, OpenaiLLM
-from macaw.main import MacawAgent
+from maccaw.maccaw import BaseTool, OpenaiLLM
+from maccaw.main import MaccawAgent
 import win32com.client
 import winshell
 from datetime import datetime, timedelta
@@ -117,9 +117,9 @@ If there are any issues while performing these actions, you will provide an appr
 
 tools = [RecycleBinTool()]
 
-agent = MacawAgent(
+agent = MaccawAgent(
     sys_prompt=sys_prompt,
-    macaw_llm=llm,
+    maccaw_llm=llm,
     tools_list=tools,
     logging=True,
     use_system_prompt_as_context=True,
