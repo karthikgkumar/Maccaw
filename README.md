@@ -22,7 +22,7 @@ pip install maccaw
 
 ** ♻ Recycle Bin Agent**
 
-- [Tutorial](https://github.com/karthikgkumar/Macaw/blob/main/examples/recycle.py)
+- [Tutorial](https://ds-organization-11.gitbook.io/maccaw/tutorial/ai-recycle-bin-assistant)
 - End-to-end Example: 
 
 **🧱 PPT Gneration Agent**
@@ -31,12 +31,12 @@ pip install maccaw
 - End-to-end Example: []()
 
 
-And much more! Head to the [Tutorials]() section of the docs for more.
+And much more! Head to the [Tutorials](https://ds-organization-11.gitbook.io/maccaw/tutorial/ai-recycle-bin-assistant) section of the docs for more.
 
 
 ## 📖 Documentation
 
-Please see [here]() for full documentation, which includes:
+Please see [here](https://ds-organization-11.gitbook.io/maccaw/) for full documentation, which includes:
 
 
 ## 💁 Contributing
