@@ -7,7 +7,7 @@ import anthropic
 from mistralai.client import MistralClient
 
 from openai.types.chat import ChatCompletion
-from mistralai.models.chat_completion import ChatMessage
+# from mistralai.models.chat_completion import ChatMessage
 
 from anthropic.types import Message
 from pydantic_core import PydanticUndefined
